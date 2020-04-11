@@ -83,12 +83,11 @@
             <!-- Book img -->
             <div class="col-12 col-md-3 ">
                 <div class="product-img text-center">
-                    <img class="img-fluid mt-md-5 mt-lg-0 " src="./img/product02.png" alt="book cover">
+                    <img class="img-fluid" src="./img/product02.png" alt="book cover">
                 </div>
-                <div class="text-center mt-2 ">
-                    <button class="book-btn"><i class="fas fa-shopping-cart"></i> Add to cart</button>
-                    <button class="book-btn mt-1">view cart</button>
-                </div>
+                <a href="javascript:history.back()" class="full-button btn mt-2 mb-2"><span
+                        class="fa fa-chevron-left"></span>
+                    Previous Page</a>
             </div>
             <!-- Book Details -->
             <div class="col-12 col-md-9 ">
@@ -116,6 +115,22 @@
                             <td>Zagazig,Egypt</td>
                         </tr>
                         <tr>
+                            <th scope="row">Page Count:</th>
+                            <td>320</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">weight:</th>
+                            <td>2<span>Kg</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Size:</th>
+                            <td>
+                                <div id="length"><span>length: </span>11.80 <span>cm</span></div>
+                                <div id="width"><span>width: </span>8.25 <span>cm</span></div>
+                                <div id="height"><span>height: </span> 0.87 <span>cm</span></div>
+                            </td>
+                        </tr>
+                        <tr>
                             <th scope="row">Description:</th>
                             <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quibusdam dolor libero
                                 quis quod autem iste dicta porro nulla, consequuntur eos blanditiis laudantium quaerat
@@ -123,12 +138,213 @@
                         </tr>
                     </tbody>
                 </table>
+                <form>
+                    <div class="form-group">
+                        <label for="QTY">QTY</label>
+                        <input type="number" class="form-control qty" id="QYT" name="QTY" placeholder="0.00 "
+                            min="0.00">
+                    </div>
+                    <button type="submit" class=" text-center full-button"><i class="fas fa-shopping-cart"></i> Add
+                        to
+                        cart</button>
+                </form>
 
             </div>
         </div>
+        <hr>
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <div class="row ">
+                        <!-- Rating -->
+                        <div class="col-12 col-lg-4 text-center mb-3">
+                            <div id="rating">
+                                <div class="rating-avg">
+                                    <span>4.5</span>
+                                    <div class="rating-stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <ul class="rating">
+                                    <li>
+                                        <div class="rating-stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="rating-progress">
+                                            <div style="width: 80%;"></div>
+                                        </div>
+                                        <span class="sum">3</span>
+                                    </li>
 
-        <div class="row mt-5">
-            <!-- My books -->
+                                    <li>
+                                        <div class="rating-stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="rating-progress">
+                                            <div style="width: 50%;"></div>
+                                        </div>
+                                        <span class="sum">8</span>
+                                    </li>
+                                    <li>
+                                        <div class="rating-stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="rating-progress">
+                                            <div></div>
+                                        </div>
+                                        <span class="sum">0</span>
+                                    </li>
+                                    <li>
+                                        <div class="rating-stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="rating-progress">
+                                            <div></div>
+                                        </div>
+                                        <span class="sum">0</span>
+                                    </li>
+                                    <li>
+                                        <div class="rating-stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="rating-progress">
+                                            <div></div>
+                                        </div>
+                                        <span class="sum">0</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /Rating -->
+
+                        <!-- Reviews -->
+                        <div class="col-12 col-lg-8 ">
+                            <div id="reviews">
+                                <ul class="reviews">
+                                    <li>
+                                        <div class="review-heading">
+                                            <h5 class="name">Ahmed Essam</h5>
+                                            <p class="date">27 DEC 2020, 8:0 PM</p>
+                                            <div class="review-rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="review-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="review-heading">
+                                            <h5 class="name">Ahmed Essam</h5>
+                                            <p class="date">27 DEC 2020, 8:0 PM</p>
+                                            <div class="review-rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="review-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="review-heading">
+                                            <h5 class="name">Ahmed Essam</h5>
+                                            <p class="date">27 DEC 2020, 8:0 PM</p>
+                                            <div class="review-rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="review-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="reviews-pagination">
+                                    <li class="active">1</li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /Reviews -->
+
+                        <!-- Review Form -->
+                        <div class="col-12 mt-3 mb-3">
+                            <div id="review-form">
+                                <form class="review-form">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Your Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="email" placeholder="Your Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" style="min-height: 100px;"
+                                            placeholder="Your Review"></textarea>
+                                    </div>
+                                    <div class="input-rating">
+                                        <span>Your Rating: </span>
+                                        <div class="stars">
+                                            <input id="star5" name="rating" value="5" type="radio"><label
+                                                for="star5"></label>
+                                            <input id="star4" name="rating" value="4" type="radio"><label
+                                                for="star4"></label>
+                                            <input id="star3" name="rating" value="3" type="radio"><label
+                                                for="star3"></label>
+                                            <input id="star2" name="rating" value="2" type="radio"><label
+                                                for="star2"></label>
+                                            <input id="star1" name="rating" value="1" type="radio"><label
+                                                for="star1"></label>
+                                        </div>
+                                    </div>
+                                    <button class="">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- /Review Form -->
+                    </div>
+                </div>
+            </div>
             <div class="col-12 ">
                 <h2 class="text-center header">Also By The Same Auther</h2>
                 <div class="container">
