@@ -1,0 +1,11 @@
+:root {
+    /* var(--main-btn-bg-color) */
+    --main-btn-bg-color: #d07347;
+}
+.input-group-text {
+    color: #fff;
+    background-color: var(--main-btn-bg-color)
+}
+.form-control:focus, .custom-select:focus, .custom-file-label:focus {
+    box-shadow: none;
+}
