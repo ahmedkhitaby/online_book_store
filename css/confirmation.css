@@ -21,3 +21,9 @@
     position: absolute;
     z-index: 0;
 }
+.card-body .conf-link{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break:break-all;
+    color: var(--main-btn-bg-color);
+}
